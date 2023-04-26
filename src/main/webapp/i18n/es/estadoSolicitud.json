@@ -1,0 +1,26 @@
+{
+  "proyectoh4App": {
+    "estadoSolicitud": {
+      "home": {
+        "title": "Estado Solicituds",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Estado Solicitud",
+        "createOrEditLabel": "Crear o editar Estado Solicitud",
+        "notFound": "Ningún Estado Solicituds encontrado"
+      },
+      "created": "Un nuevo Estado Solicitud ha sido creado con el identificador {{ param }}",
+      "updated": "Un Estado Solicitud ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Estado Solicitud ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estado Solicitud {{ id }}?"
+      },
+      "detail": {
+        "title": "Estado Solicitud"
+      },
+      "id": "ID",
+      "idEstadoSolicitud": "Id Estado Solicitud",
+      "stateSolicitud": "State Solicitud",
+      "solicitudHomologacion": "Solicitud Homologacion"
+    }
+  }
+}

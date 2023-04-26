@@ -1,0 +1,26 @@
+{
+  "proyectoh4App": {
+    "situacionAcademica": {
+      "home": {
+        "title": "Situacion Academicas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Situacion Academica",
+        "createOrEditLabel": "Create or edit a Situacion Academica",
+        "notFound": "No Situacion Academicas found"
+      },
+      "created": "A new Situacion Academica is created with identifier {{ param }}",
+      "updated": "A Situacion Academica is updated with identifier {{ param }}",
+      "deleted": "A Situacion Academica is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Situacion Academica {{ id }}?"
+      },
+      "detail": {
+        "title": "Situacion Academica"
+      },
+      "id": "ID",
+      "idSituacionAcademica": "Id Situacion Academica",
+      "situationAcademica": "Situation Academica",
+      "historiaAcademica": "Historia Academica"
+    }
+  }
+}

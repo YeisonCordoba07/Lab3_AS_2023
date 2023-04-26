@@ -1,0 +1,30 @@
+{
+  "proyectoh4App": {
+    "programaAcademico": {
+      "home": {
+        "title": "Programa Academicos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Programa Academico",
+        "createOrEditLabel": "Create or edit a Programa Academico",
+        "notFound": "No Programa Academicos found"
+      },
+      "created": "A new Programa Academico is created with identifier {{ param }}",
+      "updated": "A Programa Academico is updated with identifier {{ param }}",
+      "deleted": "A Programa Academico is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Programa Academico {{ id }}?"
+      },
+      "detail": {
+        "title": "Programa Academico"
+      },
+      "id": "ID",
+      "codigoPrograma": "Codigo Programa",
+      "nombrePrograma": "Nombre Programa",
+      "duracion": "Duracion",
+      "vigencia": "Vigencia",
+      "solicitudHomologacion": "Solicitud Homologacion",
+      "planEstudios": "Plan Estudios",
+      "estudiante": "Estudiante"
+    }
+  }
+}

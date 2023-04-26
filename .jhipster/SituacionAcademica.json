@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083146",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "situacion_academica",
+  "fields": [
+    {
+      "fieldName": "idSituacionAcademica",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "situationAcademica",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SituacionAcademica",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "historiaAcademica",
+      "otherEntityRelationshipName": "situacionAcademica",
+      "relationshipName": "historiaAcademica",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

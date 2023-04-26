@@ -1,0 +1,128 @@
+entity MateriaSolicitud {
+	idSolicitud Integer
+    codigoMateria Integer
+    idSemestrePasada Integer
+    notaDefinitiva Float
+    cedulaEstufiante String
+}
+
+entity SolicitudHomologacion {
+	idSolicitud Integer
+    stateSolicitud Integer
+    codigoPrograma Integer
+    fechaSolicitud LocalDate
+    comentario String
+}
+
+entity Materia {
+	codigoMateria Integer
+    nombreMateria String
+    creditos Integer
+}
+
+entity Relacion {
+	codigoMateria Integer
+    codigoMateriaRelacionada Integer
+    tipoRelacion String
+}
+
+entity HistoriaAcademica {
+	idHistoriaAcademica Integer
+    cedulaEstudiante String
+    idSemestre Integer
+    codigoPrograma Integer
+    promedioAcomulado Float
+    promedioSemestre Float
+    idTercio Integer
+    situationAcademica Integer
+    stateSemestre Integer
+}
+
+entity Estudiante {
+	cedula String
+    nombre String
+    apellido String
+    correoInstitucional String
+    correoPersonal String
+    celular String
+    estrato Integer
+    fechaIngreso LocalDate
+    version String
+    codigoPrograma Integer
+}
+
+entity ProgramaAcademico {
+	codigoPrograma Integer
+    nombrePrograma String
+    duracion Integer
+    vigencia LocalDate
+}
+
+entity PlanEstudios {
+	version String
+    codigoPrograma Integer
+    fechaAprobacion LocalDate
+}
+
+entity MateriaSemestre {
+	idMateriaSemestre Integer
+    cedulaEstudiante String
+    idSemestre Integer
+    codigoMateria Integer
+    notaDefinitiva Float
+}
+
+entity Semestre {
+	idSemestre Integer
+    fechaInicio LocalDate
+    fechaTerminacion LocalDate
+    typeSemestre Integer
+    stateSemestre Integer
+}
+
+entity EstadoSolicitud {
+	idEstadoSolicitud Integer
+    stateSolicitud String
+}
+
+entity EstadoSemestre {
+	idEstadoSemestre Integer
+    stateSemestre String
+}
+
+entity Tercio {
+	idTercio Integer
+    tercioDescription String
+}
+
+entity SituacionAcademica {
+	idSituacionAcademica Integer
+    situationAcademica String
+}
+
+entity TipoSemestre {
+	idTipoSemestre Integer
+    typeSemestre String
+}
+
+relationship OneToMany {
+  Materia to MateriaSolicitud,
+  SolicitudHomologacion to MateriaSolicitud,
+  Estudiante to MateriaSolicitud,
+  Materia to Relacion,
+  Materia to MateriaSemestre,
+  ProgramaAcademico to SolicitudHomologacion,
+  ProgramaAcademico to PlanEstudios,
+  ProgramaAcademico to Estudiante,
+  PlanEstudios to Estudiante,
+  Estudiante to MateriaSemestre,
+  Estudiante to HistoriaAcademica,
+  Semestre to MateriaSemestre,
+  Semestre to HistoriaAcademica,
+  TipoSemestre to Semestre,
+  EstadoSemestre to Semestre,
+  SituacionAcademica to HistoriaAcademica,
+  Tercio to HistoriaAcademica,
+  EstadoSemestre to HistoriaAcademica,
+  EstadoSolicitud to SolicitudHomologacion
+}

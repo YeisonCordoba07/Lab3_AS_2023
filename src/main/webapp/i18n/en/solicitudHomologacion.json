@@ -1,0 +1,31 @@
+{
+  "proyectoh4App": {
+    "solicitudHomologacion": {
+      "home": {
+        "title": "Solicitud Homologacions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Solicitud Homologacion",
+        "createOrEditLabel": "Create or edit a Solicitud Homologacion",
+        "notFound": "No Solicitud Homologacions found"
+      },
+      "created": "A new Solicitud Homologacion is created with identifier {{ param }}",
+      "updated": "A Solicitud Homologacion is updated with identifier {{ param }}",
+      "deleted": "A Solicitud Homologacion is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Solicitud Homologacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Solicitud Homologacion"
+      },
+      "id": "ID",
+      "idSolicitud": "Id Solicitud",
+      "stateSolicitud": "State Solicitud",
+      "codigoPrograma": "Codigo Programa",
+      "fechaSolicitud": "Fecha Solicitud",
+      "comentario": "Comentario",
+      "materiaSolicitud": "Materia Solicitud",
+      "programaAcademico": "Programa Academico",
+      "estadoSolicitud": "Estado Solicitud"
+    }
+  }
+}

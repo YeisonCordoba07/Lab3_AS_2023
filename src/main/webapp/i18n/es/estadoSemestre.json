@@ -1,0 +1,27 @@
+{
+  "proyectoh4App": {
+    "estadoSemestre": {
+      "home": {
+        "title": "Estado Semestres",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Estado Semestre",
+        "createOrEditLabel": "Crear o editar Estado Semestre",
+        "notFound": "Ningún Estado Semestres encontrado"
+      },
+      "created": "Un nuevo Estado Semestre ha sido creado con el identificador {{ param }}",
+      "updated": "Un Estado Semestre ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Estado Semestre ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estado Semestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Estado Semestre"
+      },
+      "id": "ID",
+      "idEstadoSemestre": "Id Estado Semestre",
+      "stateSemestre": "State Semestre",
+      "semestre": "Semestre",
+      "historiaAcademica": "Historia Academica"
+    }
+  }
+}

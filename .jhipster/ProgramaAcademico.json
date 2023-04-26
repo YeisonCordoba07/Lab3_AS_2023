@@ -1,0 +1,51 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083139",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "programa_academico",
+  "fields": [
+    {
+      "fieldName": "codigoPrograma",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nombrePrograma",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "duracion",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vigencia",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProgramaAcademico",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "solicitudHomologacion",
+      "otherEntityRelationshipName": "programaAcademico",
+      "relationshipName": "solicitudHomologacion",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "planEstudios",
+      "otherEntityRelationshipName": "programaAcademico",
+      "relationshipName": "planEstudios",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "programaAcademico",
+      "relationshipName": "estudiante",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

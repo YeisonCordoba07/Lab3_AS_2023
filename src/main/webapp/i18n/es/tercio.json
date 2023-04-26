@@ -1,0 +1,26 @@
+{
+  "proyectoh4App": {
+    "tercio": {
+      "home": {
+        "title": "Tercios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Tercio",
+        "createOrEditLabel": "Crear o editar Tercio",
+        "notFound": "Ningún Tercios encontrado"
+      },
+      "created": "Un nuevo Tercio ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tercio ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tercio ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tercio {{ id }}?"
+      },
+      "detail": {
+        "title": "Tercio"
+      },
+      "id": "ID",
+      "idTercio": "Id Tercio",
+      "tercioDescription": "Tercio Description",
+      "historiaAcademica": "Historia Academica"
+    }
+  }
+}

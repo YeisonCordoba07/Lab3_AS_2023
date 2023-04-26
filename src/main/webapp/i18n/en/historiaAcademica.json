@@ -1,0 +1,37 @@
+{
+  "proyectoh4App": {
+    "historiaAcademica": {
+      "home": {
+        "title": "Historia Academicas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Historia Academica",
+        "createOrEditLabel": "Create or edit a Historia Academica",
+        "notFound": "No Historia Academicas found"
+      },
+      "created": "A new Historia Academica is created with identifier {{ param }}",
+      "updated": "A Historia Academica is updated with identifier {{ param }}",
+      "deleted": "A Historia Academica is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Historia Academica {{ id }}?"
+      },
+      "detail": {
+        "title": "Historia Academica"
+      },
+      "id": "ID",
+      "idHistoriaAcademica": "Id Historia Academica",
+      "cedulaEstudiante": "Cedula Estudiante",
+      "idSemestre": "Id Semestre",
+      "codigoPrograma": "Codigo Programa",
+      "promedioAcomulado": "Promedio Acomulado",
+      "promedioSemestre": "Promedio Semestre",
+      "idTercio": "Id Tercio",
+      "situationAcademica": "Situation Academica",
+      "stateSemestre": "State Semestre",
+      "estudiante": "Estudiante",
+      "semestre": "Semestre",
+      "situacionAcademica": "Situacion Academica",
+      "tercio": "Tercio",
+      "estadoSemestre": "Estado Semestre"
+    }
+  }
+}

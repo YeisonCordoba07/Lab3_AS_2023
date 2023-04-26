@@ -1,0 +1,87 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083138",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estudiante",
+  "fields": [
+    {
+      "fieldName": "cedula",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apellido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "correoInstitucional",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "correoPersonal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "celular",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estrato",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fechaIngreso",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codigoPrograma",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Estudiante",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materiaSolicitud",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "materiaSolicitud",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "materiaSemestre",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "materiaSemestre",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "historiaAcademica",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "historiaAcademica",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "programaAcademico",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "programaAcademico",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "planEstudios",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "planEstudios",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

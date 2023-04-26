@@ -1,0 +1,83 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083137",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "historia_academica",
+  "fields": [
+    {
+      "fieldName": "idHistoriaAcademica",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cedulaEstudiante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idSemestre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "codigoPrograma",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "promedioAcomulado",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "promedioSemestre",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "idTercio",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "situationAcademica",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stateSemestre",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "HistoriaAcademica",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "historiaAcademica",
+      "relationshipName": "estudiante",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "semestre",
+      "otherEntityRelationshipName": "historiaAcademica",
+      "relationshipName": "semestre",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "situacionAcademica",
+      "otherEntityRelationshipName": "historiaAcademica",
+      "relationshipName": "situacionAcademica",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "tercio",
+      "otherEntityRelationshipName": "historiaAcademica",
+      "relationshipName": "tercio",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "estadoSemestre",
+      "otherEntityRelationshipName": "historiaAcademica",
+      "relationshipName": "estadoSemestre",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

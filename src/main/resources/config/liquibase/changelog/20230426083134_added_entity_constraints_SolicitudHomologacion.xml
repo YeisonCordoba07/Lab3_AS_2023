@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity SolicitudHomologacion.
+    -->
+    <changeSet id="20230426083134-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="programa_academico_id"
+                                 baseTableName="solicitud_homologacion"
+                                 constraintName="fk_solicitud_homologacion__programa_academico_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="programa_academico"/>
+
+        <addForeignKeyConstraint baseColumnNames="estado_solicitud_id"
+                                 baseTableName="solicitud_homologacion"
+                                 constraintName="fk_solicitud_homologacion__estado_solicitud_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estado_solicitud"/>
+    </changeSet>
+</databaseChangeLog>

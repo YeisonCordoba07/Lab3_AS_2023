@@ -1,0 +1,27 @@
+{
+  "proyectoh4App": {
+    "relacion": {
+      "home": {
+        "title": "Relacions",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Relacion",
+        "createOrEditLabel": "Crear o editar Relacion",
+        "notFound": "Ningún Relacions encontrado"
+      },
+      "created": "Un nuevo Relacion ha sido creado con el identificador {{ param }}",
+      "updated": "Un Relacion ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Relacion ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Relacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Relacion"
+      },
+      "id": "ID",
+      "codigoMateria": "Codigo Materia",
+      "codigoMateriaRelacionada": "Codigo Materia Relacionada",
+      "tipoRelacion": "Tipo Relacion",
+      "materia": "Materia"
+    }
+  }
+}

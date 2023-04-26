@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083144",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estado_semestre",
+  "fields": [
+    {
+      "fieldName": "idEstadoSemestre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stateSemestre",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EstadoSemestre",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "semestre",
+      "otherEntityRelationshipName": "estadoSemestre",
+      "relationshipName": "semestre",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "historiaAcademica",
+      "otherEntityRelationshipName": "estadoSemestre",
+      "relationshipName": "historiaAcademica",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

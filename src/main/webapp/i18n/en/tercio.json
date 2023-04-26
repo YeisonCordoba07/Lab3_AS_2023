@@ -1,0 +1,26 @@
+{
+  "proyectoh4App": {
+    "tercio": {
+      "home": {
+        "title": "Tercios",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tercio",
+        "createOrEditLabel": "Create or edit a Tercio",
+        "notFound": "No Tercios found"
+      },
+      "created": "A new Tercio is created with identifier {{ param }}",
+      "updated": "A Tercio is updated with identifier {{ param }}",
+      "deleted": "A Tercio is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tercio {{ id }}?"
+      },
+      "detail": {
+        "title": "Tercio"
+      },
+      "id": "ID",
+      "idTercio": "Id Tercio",
+      "tercioDescription": "Tercio Description",
+      "historiaAcademica": "Historia Academica"
+    }
+  }
+}

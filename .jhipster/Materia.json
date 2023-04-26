@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083135",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "materia",
+  "fields": [
+    {
+      "fieldName": "codigoMateria",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nombreMateria",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditos",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Materia",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materiaSolicitud",
+      "otherEntityRelationshipName": "materia",
+      "relationshipName": "materiaSolicitud",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "relacion",
+      "otherEntityRelationshipName": "materia",
+      "relationshipName": "relacion",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "materiaSemestre",
+      "otherEntityRelationshipName": "materia",
+      "relationshipName": "materiaSemestre",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

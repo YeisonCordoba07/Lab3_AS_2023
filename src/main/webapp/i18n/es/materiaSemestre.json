@@ -1,0 +1,31 @@
+{
+  "proyectoh4App": {
+    "materiaSemestre": {
+      "home": {
+        "title": "Materia Semestres",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Materia Semestre",
+        "createOrEditLabel": "Crear o editar Materia Semestre",
+        "notFound": "Ningún Materia Semestres encontrado"
+      },
+      "created": "Un nuevo Materia Semestre ha sido creado con el identificador {{ param }}",
+      "updated": "Un Materia Semestre ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Materia Semestre ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Materia Semestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Materia Semestre"
+      },
+      "id": "ID",
+      "idMateriaSemestre": "Id Materia Semestre",
+      "cedulaEstudiante": "Cedula Estudiante",
+      "idSemestre": "Id Semestre",
+      "codigoMateria": "Codigo Materia",
+      "notaDefinitiva": "Nota Definitiva",
+      "materia": "Materia",
+      "estudiante": "Estudiante",
+      "semestre": "Semestre"
+    }
+  }
+}

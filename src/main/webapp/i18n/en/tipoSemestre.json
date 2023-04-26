@@ -1,0 +1,26 @@
+{
+  "proyectoh4App": {
+    "tipoSemestre": {
+      "home": {
+        "title": "Tipo Semestres",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tipo Semestre",
+        "createOrEditLabel": "Create or edit a Tipo Semestre",
+        "notFound": "No Tipo Semestres found"
+      },
+      "created": "A new Tipo Semestre is created with identifier {{ param }}",
+      "updated": "A Tipo Semestre is updated with identifier {{ param }}",
+      "deleted": "A Tipo Semestre is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tipo Semestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Semestre"
+      },
+      "id": "ID",
+      "idTipoSemestre": "Id Tipo Semestre",
+      "typeSemestre": "Type Semestre",
+      "semestre": "Semestre"
+    }
+  }
+}

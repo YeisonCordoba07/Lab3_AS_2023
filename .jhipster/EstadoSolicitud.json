@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083143",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estado_solicitud",
+  "fields": [
+    {
+      "fieldName": "idEstadoSolicitud",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stateSolicitud",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EstadoSolicitud",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "solicitudHomologacion",
+      "otherEntityRelationshipName": "estadoSolicitud",
+      "relationshipName": "solicitudHomologacion",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

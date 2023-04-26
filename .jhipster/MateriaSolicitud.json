@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083133",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "materia_solicitud",
+  "fields": [
+    {
+      "fieldName": "idSolicitud",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "codigoMateria",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "idSemestrePasada",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "notaDefinitiva",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "cedulaEstufiante",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "MateriaSolicitud",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materia",
+      "otherEntityRelationshipName": "materiaSolicitud",
+      "relationshipName": "materia",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "solicitudHomologacion",
+      "otherEntityRelationshipName": "materiaSolicitud",
+      "relationshipName": "solicitudHomologacion",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "materiaSolicitud",
+      "relationshipName": "estudiante",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

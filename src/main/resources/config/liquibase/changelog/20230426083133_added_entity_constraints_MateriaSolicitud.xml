@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity MateriaSolicitud.
+    -->
+    <changeSet id="20230426083133-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="materia_id"
+                                 baseTableName="materia_solicitud"
+                                 constraintName="fk_materia_solicitud__materia_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="materia"/>
+
+        <addForeignKeyConstraint baseColumnNames="solicitud_homologacion_id"
+                                 baseTableName="materia_solicitud"
+                                 constraintName="fk_materia_solicitud__solicitud_homologacion_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="solicitud_homologacion"/>
+
+        <addForeignKeyConstraint baseColumnNames="estudiante_id"
+                                 baseTableName="materia_solicitud"
+                                 constraintName="fk_materia_solicitud__estudiante_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estudiante"/>
+    </changeSet>
+</databaseChangeLog>

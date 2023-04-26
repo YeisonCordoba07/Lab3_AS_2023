@@ -1,0 +1,32 @@
+{
+  "proyectoh4App": {
+    "semestre": {
+      "home": {
+        "title": "Semestres",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Semestre",
+        "createOrEditLabel": "Create or edit a Semestre",
+        "notFound": "No Semestres found"
+      },
+      "created": "A new Semestre is created with identifier {{ param }}",
+      "updated": "A Semestre is updated with identifier {{ param }}",
+      "deleted": "A Semestre is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Semestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Semestre"
+      },
+      "id": "ID",
+      "idSemestre": "Id Semestre",
+      "fechaInicio": "Fecha Inicio",
+      "fechaTerminacion": "Fecha Terminacion",
+      "typeSemestre": "Type Semestre",
+      "stateSemestre": "State Semestre",
+      "materiaSemestre": "Materia Semestre",
+      "historiaAcademica": "Historia Academica",
+      "tipoSemestre": "Tipo Semestre",
+      "estadoSemestre": "Estado Semestre"
+    }
+  }
+}

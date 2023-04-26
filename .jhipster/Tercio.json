@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083145",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tercio",
+  "fields": [
+    {
+      "fieldName": "idTercio",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tercioDescription",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Tercio",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "historiaAcademica",
+      "otherEntityRelationshipName": "tercio",
+      "relationshipName": "historiaAcademica",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

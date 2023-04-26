@@ -1,0 +1,61 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083142",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "semestre",
+  "fields": [
+    {
+      "fieldName": "idSemestre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fechaInicio",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "fechaTerminacion",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "typeSemestre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stateSemestre",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Semestre",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materiaSemestre",
+      "otherEntityRelationshipName": "semestre",
+      "relationshipName": "materiaSemestre",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "historiaAcademica",
+      "otherEntityRelationshipName": "semestre",
+      "relationshipName": "historiaAcademica",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "tipoSemestre",
+      "otherEntityRelationshipName": "semestre",
+      "relationshipName": "tipoSemestre",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "estadoSemestre",
+      "otherEntityRelationshipName": "semestre",
+      "relationshipName": "estadoSemestre",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

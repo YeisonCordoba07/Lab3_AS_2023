@@ -7,6 +7,21 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "materiaSolicitud": "Materia Solicitud",
+        "solicitudHomologacion": "Solicitud Homologacion",
+        "materia": "Materia",
+        "relacion": "Relacion",
+        "historiaAcademica": "Historia Academica",
+        "estudiante": "Estudiante",
+        "programaAcademico": "Programa Academico",
+        "planEstudios": "Plan Estudios",
+        "materiaSemestre": "Materia Semestre",
+        "semestre": "Semestre",
+        "estadoSolicitud": "Estado Solicitud",
+        "estadoSemestre": "Estado Semestre",
+        "tercio": "Tercio",
+        "situacionAcademica": "Situacion Academica",
+        "tipoSemestre": "Tipo Semestre",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

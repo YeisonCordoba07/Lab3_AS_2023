@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity HistoriaAcademica.
+    -->
+    <changeSet id="20230426083137-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="estudiante_id"
+                                 baseTableName="historia_academica"
+                                 constraintName="fk_historia_academica__estudiante_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estudiante"/>
+
+        <addForeignKeyConstraint baseColumnNames="semestre_id"
+                                 baseTableName="historia_academica"
+                                 constraintName="fk_historia_academica__semestre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="semestre"/>
+
+        <addForeignKeyConstraint baseColumnNames="situacion_academica_id"
+                                 baseTableName="historia_academica"
+                                 constraintName="fk_historia_academica__situacion_academica_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="situacion_academica"/>
+
+        <addForeignKeyConstraint baseColumnNames="tercio_id"
+                                 baseTableName="historia_academica"
+                                 constraintName="fk_historia_academica__tercio_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tercio"/>
+
+        <addForeignKeyConstraint baseColumnNames="estado_semestre_id"
+                                 baseTableName="historia_academica"
+                                 constraintName="fk_historia_academica__estado_semestre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estado_semestre"/>
+    </changeSet>
+</databaseChangeLog>

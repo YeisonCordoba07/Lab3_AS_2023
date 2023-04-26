@@ -1,0 +1,28 @@
+{
+  "proyectoh4App": {
+    "planEstudios": {
+      "home": {
+        "title": "Plan Estudios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Plan Estudios",
+        "createOrEditLabel": "Crear o editar Plan Estudios",
+        "notFound": "Ningún Plan Estudios encontrado"
+      },
+      "created": "Un nuevo Plan Estudios ha sido creado con el identificador {{ param }}",
+      "updated": "Un Plan Estudios ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Plan Estudios ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Plan Estudios {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan Estudios"
+      },
+      "id": "ID",
+      "version": "Version",
+      "codigoPrograma": "Codigo Programa",
+      "fechaAprobacion": "Fecha Aprobacion",
+      "estudiante": "Estudiante",
+      "programaAcademico": "Programa Academico"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "proyectoh4App": {
+    "tipoSemestre": {
+      "home": {
+        "title": "Tipo Semestres",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Tipo Semestre",
+        "createOrEditLabel": "Crear o editar Tipo Semestre",
+        "notFound": "Ningún Tipo Semestres encontrado"
+      },
+      "created": "Un nuevo Tipo Semestre ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tipo Semestre ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tipo Semestre ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tipo Semestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Semestre"
+      },
+      "id": "ID",
+      "idTipoSemestre": "Id Tipo Semestre",
+      "typeSemestre": "Type Semestre",
+      "semestre": "Semestre"
+    }
+  }
+}

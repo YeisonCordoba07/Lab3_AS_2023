@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083134",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "solicitud_homologacion",
+  "fields": [
+    {
+      "fieldName": "idSolicitud",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stateSolicitud",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "codigoPrograma",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fechaSolicitud",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "comentario",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SolicitudHomologacion",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materiaSolicitud",
+      "otherEntityRelationshipName": "solicitudHomologacion",
+      "relationshipName": "materiaSolicitud",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "programaAcademico",
+      "otherEntityRelationshipName": "solicitudHomologacion",
+      "relationshipName": "programaAcademico",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "estadoSolicitud",
+      "otherEntityRelationshipName": "solicitudHomologacion",
+      "relationshipName": "estadoSolicitud",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

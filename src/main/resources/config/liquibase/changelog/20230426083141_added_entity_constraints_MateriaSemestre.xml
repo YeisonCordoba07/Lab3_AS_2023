@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity MateriaSemestre.
+    -->
+    <changeSet id="20230426083141-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="materia_id"
+                                 baseTableName="materia_semestre"
+                                 constraintName="fk_materia_semestre__materia_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="materia"/>
+
+        <addForeignKeyConstraint baseColumnNames="estudiante_id"
+                                 baseTableName="materia_semestre"
+                                 constraintName="fk_materia_semestre__estudiante_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estudiante"/>
+
+        <addForeignKeyConstraint baseColumnNames="semestre_id"
+                                 baseTableName="materia_semestre"
+                                 constraintName="fk_materia_semestre__semestre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="semestre"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,31 @@
+{
+  "proyectoh4App": {
+    "materiaSolicitud": {
+      "home": {
+        "title": "Materia Solicituds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Materia Solicitud",
+        "createOrEditLabel": "Create or edit a Materia Solicitud",
+        "notFound": "No Materia Solicituds found"
+      },
+      "created": "A new Materia Solicitud is created with identifier {{ param }}",
+      "updated": "A Materia Solicitud is updated with identifier {{ param }}",
+      "deleted": "A Materia Solicitud is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Materia Solicitud {{ id }}?"
+      },
+      "detail": {
+        "title": "Materia Solicitud"
+      },
+      "id": "ID",
+      "idSolicitud": "Id Solicitud",
+      "codigoMateria": "Codigo Materia",
+      "idSemestrePasada": "Id Semestre Pasada",
+      "notaDefinitiva": "Nota Definitiva",
+      "cedulaEstufiante": "Cedula Estufiante",
+      "materia": "Materia",
+      "solicitudHomologacion": "Solicitud Homologacion",
+      "estudiante": "Estudiante"
+    }
+  }
+}

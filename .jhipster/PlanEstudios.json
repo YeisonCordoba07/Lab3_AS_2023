@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083140",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "plan_estudios",
+  "fields": [
+    {
+      "fieldName": "version",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codigoPrograma",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fechaAprobacion",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PlanEstudios",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "planEstudios",
+      "relationshipName": "estudiante",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "programaAcademico",
+      "otherEntityRelationshipName": "planEstudios",
+      "relationshipName": "programaAcademico",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

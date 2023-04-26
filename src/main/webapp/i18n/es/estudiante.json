@@ -1,0 +1,38 @@
+{
+  "proyectoh4App": {
+    "estudiante": {
+      "home": {
+        "title": "Estudiantes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Estudiante",
+        "createOrEditLabel": "Crear o editar Estudiante",
+        "notFound": "Ningún Estudiantes encontrado"
+      },
+      "created": "Un nuevo Estudiante ha sido creado con el identificador {{ param }}",
+      "updated": "Un Estudiante ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Estudiante ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estudiante {{ id }}?"
+      },
+      "detail": {
+        "title": "Estudiante"
+      },
+      "id": "ID",
+      "cedula": "Cedula",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "correoInstitucional": "Correo Institucional",
+      "correoPersonal": "Correo Personal",
+      "celular": "Celular",
+      "estrato": "Estrato",
+      "fechaIngreso": "Fecha Ingreso",
+      "version": "Version",
+      "codigoPrograma": "Codigo Programa",
+      "materiaSolicitud": "Materia Solicitud",
+      "materiaSemestre": "Materia Semestre",
+      "historiaAcademica": "Historia Academica",
+      "programaAcademico": "Programa Academico",
+      "planEstudios": "Plan Estudios"
+    }
+  }
+}

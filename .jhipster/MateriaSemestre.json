@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20230426083141",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "materia_semestre",
+  "fields": [
+    {
+      "fieldName": "idMateriaSemestre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cedulaEstudiante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idSemestre",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "codigoMateria",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "notaDefinitiva",
+      "fieldType": "Float"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "MateriaSemestre",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materia",
+      "otherEntityRelationshipName": "materiaSemestre",
+      "relationshipName": "materia",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "materiaSemestre",
+      "relationshipName": "estudiante",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "semestre",
+      "otherEntityRelationshipName": "materiaSemestre",
+      "relationshipName": "semestre",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
