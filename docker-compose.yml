@@ -1,7 +1,5 @@
-# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
-version: '3.8'
 services:
-  proyectoh4-app:
+  proyectoh4:
     image: proyectoh4
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
@@ -9,24 +7,14 @@ services:
       - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
       - SPRING_DATASOURCE_URL=jdbc:mysql://proyectoh4-mysql:3306/proyectoh4?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
       - SPRING_LIQUIBASE_URL=jdbc:mysql://proyectoh4-mysql:3306/proyectoh4?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&allowPublicKeyRetrieval=trueuseSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
-      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
-    # If you want to expose these ports outside your dev PC,
-    # remove the "127.0.0.1:" prefix
+      - JHIPSTER_SLEEP=30
     ports:
-      - 127.0.0.1:8080:8080
+      - '8080:8080'
   proyectoh4-mysql:
     image: mysql:8.0.30
-    # volumes:
-    #   - ~/volumes/jhipster/proyectoh4/mysql/:/var/lib/mysql/
     volumes:
       - ./config/mysql:/etc/mysql/conf.d
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
       - MYSQL_DATABASE=proyectoh4
-      - MYSQL_ROOT_HOST=proyectoh4-mysql
-      - MYSQL_ROOT_PASSWORD=root
-    # If you want to expose these ports outside your dev PC,
-    # remove the "127.0.0.1:" prefix
-    ports:
-      - 127.0.0.1:3306:3306
     command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
